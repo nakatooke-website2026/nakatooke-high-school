@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration | NAKATOOKE HIGH SCHOOL</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Algerian", Georgia, serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(120deg,#001f3f,#00509d);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+nav {
+    background: #ffcc00;
+    padding: 16px;
+    text-align: center;
+}
+
+nav a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.marquee {
+    background: #003366;
+    color: white;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.container {
+    max-width: 750px;
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #003366;
+    text-align: center;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 12px;
+}
+
+.intro {
+    text-align: center;
+    color: #555;
+    line-height: 1.7;
+}
+
+.section-title {
+    background: #003366;
+    color: white;
+    padding: 12px;
+    margin-top: 25px;
+    border-left: 5px solid #ffcc00;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    color: #003366;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background: #fafafa;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #ffcc00;
+    border-color: #003366;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 25px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00509d;
+}
+
+.bottom-marquee {
+    background: #ffcc00;
+    color: #003366;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+footer {
+    background: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    border-top: 5px solid #ffcc00;
+    line-height: 1.8;
+}
+
+footer strong {
+    color: #ffcc00;
+}
+
+@media(max-width:600px) {
+    .container {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>NAKATOOKE HIGH SCHOOL</h1>
+<p>EXCELLENCE • DISCIPLINE • SUCCESS</p>
+<p>WELCOME TO OUR SCHOOL COMMUNITY</p>
+</header>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="registration.html">REGISTRATION</a>
+</nav>
+
+<!-- TOP MARQUEE -->
+<div class="marquee">
+<marquee direction="left" scrollamount="6">
+WELCOME TO NAKATOOKE HIGH SCHOOL! ADMISSIONS ARE OPEN!
+JOIN US TODAY FOR QUALITY EDUCATION AND A BRIGHTER FUTURE!
+</marquee>
+</div>
+
+<div class="container">
+
+<h2>STUDENT REGISTRATION FORM</h2>
+
+<p class="intro">
+Welcome to Nakatoоке High School.
+We are delighted that you have chosen our school.
+Please provide the required information below.
+</p>
+
+<form>
+
+<div class="section-title">
+STUDENT PERSONAL DETAILS
+</div>
+
+<label>Student Full Name</label>
+<input type="text" placeholder="Enter full name" required>
+
+<label>Date of Birth</label>
+<input type="date" required>
+
+<label>Gender</label>
+<select required>
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<div class="section-title">
+ACADEMIC INFORMATION
+</div>
+
+<label>Class Applying For</label>
+<select required>
+<option value="">Choose Your Class</option>
+<option>Senior One (S.1)</option>
+<option>Senior Two (S.2)</option>
+<option>Senior Three (S.3)</option>
+<option>Senior Four (S.4)</option>
+<option>Senior Five (S.5)</option>
+<option>Senior Six (S.6)</option>
+</select>
+
+<label>Previous School</label>
+<input type="text" placeholder="Enter previous school">
+
+<label>Previous Class</label>
+<input type="text" placeholder="Enter previous class">
+
+<div class="section-title">
+PARENT / GUARDIAN INFORMATION
+</div>
+
+<label>Parent / Guardian Full Name</label>
+<input type="text" placeholder="Enter guardian's name" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>Home Address</label>
+<input type="text" placeholder="Enter home address">
+
+<label>Additional Information</label>
+<textarea rows="4" placeholder="Write additional information here"></textarea>
+
+<button type="submit">
+SUBMIT REGISTRATION
+</button>
+
+</form>
+
+</div>
+
+<!-- LOWER MARQUEE -->
+<div class="bottom-marquee">
+<marquee direction="right" scrollamount="5">
+NAKATOOKE HIGH SCHOOL — BUILDING FUTURE LEADERS!
+EDUCATION IS THE FOUNDATION OF SUCCESS!
+DISCIPLINE, KNOWLEDGE AND EXCELLENCE!
+</marquee>
+</div>
+
+<footer>
+<p><strong>NAKATOOKE HIGH SCHOOL</strong></p>
+<p>Where Excellence Meets Opportunity</p>
+<p>Education for a Brighter Future</p>
+<p>© 2026 NAKATOOKE HIGH SCHOOL. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
